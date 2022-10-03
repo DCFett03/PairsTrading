@@ -9,7 +9,7 @@ import numpy as np
 from numpy import cov
 import datetime
 import matplotlib.pyplot as plt
-path = r'/Users/danielchen/Desktop/Historical_data/stockpicks/*.csv'
+path = r'/Users/Name/Desktop/Historical_data/stockpicks/*.csv'
 files = glob.glob(path)
 dfs = [pd.read_csv(f, index_col = None, header = 0, sep=',' ,usecols = ['close']) for f in files]
 
